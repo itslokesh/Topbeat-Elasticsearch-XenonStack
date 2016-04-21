@@ -1,0 +1,6946 @@
+PSG-SKAVAs-iMac:topbeat-1.2.1-darwin psg-skava$ sudo ./topbeat -e -c topbeat.yml -d "publish"
+Password:
+2016/04/21 14:50:57.078127 geolite.go:24: INFO GeoIP disabled: No paths were set under output.geoip.paths
+2016/04/21 14:52:12.099673 outputs.go:126: INFO Activated elasticsearch as output plugin.
+2016/04/21 14:52:12.099699 publish.go:232: DBG  Create output worker
+2016/04/21 14:52:12.099736 publish.go:274: DBG  No output is defined to store the topology. The server fields might not be filled.
+2016/04/21 14:52:12.099752 publish.go:288: INFO Publisher name: PSG-SKAVAs-iMac.local
+2016/04/21 14:52:12.099869 async.go:78: INFO Flush Interval set to: 1s
+2016/04/21 14:52:12.099877 async.go:84: INFO Max Bulk Size set to: 50
+2016/04/21 14:52:12.099882 async.go:92: DBG  create bulk processing worker (interval=1s, bulk size=50)
+2016/04/21 14:52:12.099917 beat.go:147: INFO Init Beat: topbeat; Version: 1.2.1
+2016/04/21 14:52:12.100355 beat.go:173: INFO topbeat sucessfully setup. Start running.
+2016/04/21 14:52:22.161071 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.160Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "cpu": {
+    "user": 289870,
+    "user_p": 0,
+    "nice": 0,
+    "system": 128430,
+    "system_p": 0,
+    "idle": 10680752,
+    "iowait": 0,
+    "irq": 0,
+    "softirq": 0,
+    "steal": 0
+  },
+  "load": {
+    "load1": 4.19970703125,
+    "load5": 2.0478515625,
+    "load15": 1.43994140625
+  },
+  "mem": {
+    "total": 8589934592,
+    "used": 7662297088,
+    "free": 927637504,
+    "used_p": 0.89,
+    "actual_used": 5433323520,
+    "actual_free": 3156611072,
+    "actual_used_p": 0.63
+  },
+  "swap": {
+    "total": 0,
+    "used": 0,
+    "free": 0,
+    "used_p": 0
+  },
+  "type": "system"
+}
+2016/04/21 14:52:22.161308 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.161Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 28,
+      "user_p": 0.0036,
+      "system": 16,
+      "total": 44,
+      "start_time": "20:20"
+    },
+    "mem": {
+      "size": 587187138560,
+      "rss": 13041664,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "topbeat",
+    "pid": 1574,
+    "ppid": 1573,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.161416 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.161Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "sudo ./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 6,
+      "user_p": 0,
+      "system": 5,
+      "total": 11,
+      "start_time": "20:20"
+    },
+    "mem": {
+      "size": 2528346112,
+      "rss": 3149824,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "sudo",
+    "pid": 1573,
+    "ppid": 813,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.161536 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.161Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/bin/java -Xms256m -Xmx1g -Djava.awt.headless=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -XX:+DisableExplicitGC -Dfile.encoding=UTF-8 -Djna.nosys=true -Des.path.home=/Users/psg-skava/Downloads/Lokesh/elasticsearch-2.3.1 -cp /Users/psg-skava/Downloads/Lokesh/elasticsearch-2.3.1/lib/elasticsearch-2.3.1.jar:/Users/psg-skava/Downloads/Lokesh/elasticsearch-2.3.1/lib/* org.elasticsearch.bootstrap.Elasticsearch start",
+    "cpu": {
+      "user": 5678,
+      "user_p": 0.0039,
+      "system": 448,
+      "total": 6126,
+      "start_time": "20:20"
+    },
+    "mem": {
+      "size": 5176557568,
+      "rss": 258265088,
+      "rss_p": 0.03,
+      "share": 0
+    },
+    "name": "java",
+    "pid": 1561,
+    "ppid": 1556,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.161689 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.161Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "-bash",
+    "cpu": {
+      "user": 5,
+      "user_p": 0,
+      "system": 6,
+      "total": 11,
+      "start_time": "20:20"
+    },
+    "mem": {
+      "size": 2520084480,
+      "rss": 1413120,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "bash",
+    "pid": 1556,
+    "ppid": 1555,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.161785 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.161Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "login -pfl psg-skava /bin/bash -c exec -la bash /bin/bash",
+    "cpu": {
+      "user": 14,
+      "user_p": 0,
+      "system": 14,
+      "total": 28,
+      "start_time": "20:20"
+    },
+    "mem": {
+      "size": 2528227328,
+      "rss": 3006464,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "login",
+    "pid": 1555,
+    "ppid": 802,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.161913 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.161Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/QuickLook.framework/Versions/A/Resources/quicklookd.app/Contents/XPCServices/QuickLookSatellite.xpc/Contents/MacOS/QuickLookSatellite",
+    "cpu": {
+      "user": 192,
+      "user_p": 0,
+      "system": 27,
+      "total": 219,
+      "start_time": "20:09"
+    },
+    "mem": {
+      "size": 2583957504,
+      "rss": 19324928,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "QuickLookSatell",
+    "pid": 1528,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.161987 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.161Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/QuickLook.framework/Resources/quicklookd.app/Contents/MacOS/quicklookd",
+    "cpu": {
+      "user": 125,
+      "user_p": 0,
+      "system": 67,
+      "total": 192,
+      "start_time": "20:09"
+    },
+    "mem": {
+      "size": 3082747904,
+      "rss": 10186752,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "quicklookd",
+    "pid": 1527,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.162060 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.162Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "./topbeat",
+    "cpu": {
+      "user": 25,
+      "user_p": 0,
+      "system": 44,
+      "total": 69,
+      "start_time": "20:05"
+    },
+    "mem": {
+      "size": 587186089984,
+      "rss": 12132352,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "topbeat",
+    "pid": 1521,
+    "ppid": 809,
+    "state": "stopped",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.162128 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.162Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/KerberosHelper/Helpers/DiskUnmountWatcher",
+    "cpu": {
+      "user": 4,
+      "user_p": 0,
+      "system": 4,
+      "total": 8,
+      "start_time": "19:40"
+    },
+    "mem": {
+      "size": 2520281088,
+      "rss": 2514944,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "DiskUnmountWatc",
+    "pid": 1478,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.162206 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.162Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/USBAgent",
+    "cpu": {
+      "user": 6,
+      "user_p": 0,
+      "system": 5,
+      "total": 11,
+      "start_time": "19:40"
+    },
+    "mem": {
+      "size": 2528690176,
+      "rss": 5541888,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "USBAgent",
+    "pid": 1476,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.162306 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.162Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 77,
+      "user_p": 0,
+      "system": 43,
+      "total": 120,
+      "start_time": "19:28"
+    },
+    "mem": {
+      "size": 587187138560,
+      "rss": 12406784,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "topbeat",
+    "pid": 1462,
+    "ppid": 1461,
+    "state": "stopped",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.162386 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.162Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "sudo ./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 7,
+      "user_p": 0,
+      "system": 10,
+      "total": 17,
+      "start_time": "19:28"
+    },
+    "mem": {
+      "size": 2528346112,
+      "rss": 3153920,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "sudo",
+    "pid": 1461,
+    "ppid": 809,
+    "state": "stopped",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.162538 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.162Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Google Chrome.app/Contents/Versions/49.0.2623.112/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --enable-features=AutomaticTabDiscarding\u003cAutomaticTabDiscarding,WebFontsIntervention\u003cWebFontsIntervention --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/*AutomaticTabDiscarding/Enabled_Once_10-gen2/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Enabled/*ExtensionActionRedesign/Enabled/*ExtensionDeveloperModeWarning/Default/*ExtensionInstallVerification/None/*GFE/Default/InstanceID/Enabled/IntelligentSessionRestore/Enabled2/*MacMemoryMechanism/Mach/MaterialDesignDownloads/Enabled/*OmniboxBundledExperimentV1/StableHQPFrequencyBugFix_PrePeriod_2/*PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Control50pct/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/*SafeBrowsingUpdateFrequency/Default/*UMA-Dynamic-Uniformity-Trial/Group6/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_01/*UMA-Uniformity-Trial-10-Percent/group_09/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_02/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/default/*UseDelayAgnosticAEC/DefaultEnabled/*WebFontsIntervention/Enabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --content-image-texture-target=3553,3553,3553,3553,3553,34037,3553,3553,3553,3553,34037,3553,34037,34037 --video-image-texture-target=34037 --channel=1262.63.7647653",
+    "cpu": {
+      "user": 3536,
+      "user_p": 0,
+      "system": 715,
+      "total": 4251,
+      "start_time": "19:21"
+    },
+    "mem": {
+      "size": 3447209984,
+      "rss": 107732992,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "Google Chrome H",
+    "pid": 1459,
+    "ppid": 1262,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.162865 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.162Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Google Chrome.app/Contents/Versions/49.0.2623.112/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --enable-features=AutomaticTabDiscarding\u003cAutomaticTabDiscarding,WebFontsIntervention\u003cWebFontsIntervention --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/*AutomaticTabDiscarding/Enabled_Once_10-gen2/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Enabled/*ExtensionActionRedesign/Enabled/*ExtensionDeveloperModeWarning/Default/*ExtensionInstallVerification/None/*GFE/Default/InstanceID/Enabled/IntelligentSessionRestore/Enabled2/*MacMemoryMechanism/Mach/MaterialDesignDownloads/Enabled/*OmniboxBundledExperimentV1/StableHQPFrequencyBugFix_PrePeriod_2/*PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Control50pct/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/*SafeBrowsingUpdateFrequency/Default/*UMA-Dynamic-Uniformity-Trial/Group6/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_01/*UMA-Uniformity-Trial-10-Percent/group_09/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_02/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/default/*UseDelayAgnosticAEC/DefaultEnabled/*WebFontsIntervention/Enabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --content-image-texture-target=3553,3553,3553,3553,3553,34037,3553,3553,3553,3553,34037,3553,34037,34037 --video-image-texture-target=34037 --channel=1262.62.1897531870",
+    "cpu": {
+      "user": 9534,
+      "user_p": 0,
+      "system": 2015,
+      "total": 11549,
+      "start_time": "19:21"
+    },
+    "mem": {
+      "size": 3454111744,
+      "rss": 112427008,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "Google Chrome H",
+    "pid": 1458,
+    "ppid": 1262,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.163210 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.163Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Google Chrome.app/Contents/Versions/49.0.2623.112/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --enable-features=AutomaticTabDiscarding\u003cAutomaticTabDiscarding,WebFontsIntervention\u003cWebFontsIntervention --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/*AutomaticTabDiscarding/Enabled_Once_10-gen2/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Enabled/*ExtensionActionRedesign/Enabled/*ExtensionDeveloperModeWarning/Default/*ExtensionInstallVerification/None/*GFE/Default/InstanceID/Enabled/IntelligentSessionRestore/Enabled2/*MacMemoryMechanism/Mach/MaterialDesignDownloads/Enabled/*OmniboxBundledExperimentV1/StableHQPFrequencyBugFix_PrePeriod_2/*PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Control50pct/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/*SafeBrowsingUpdateFrequency/Default/*UMA-Dynamic-Uniformity-Trial/Group6/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_01/*UMA-Uniformity-Trial-10-Percent/group_09/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_02/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/default/*UseDelayAgnosticAEC/DefaultEnabled/*WebFontsIntervention/Enabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --content-image-texture-target=3553,3553,3553,3553,3553,34037,3553,3553,3553,3553,34037,3553,34037,34037 --video-image-texture-target=34037 --channel=1262.61.216714910",
+    "cpu": {
+      "user": 4349,
+      "user_p": 0.0005,
+      "system": 1019,
+      "total": 5368,
+      "start_time": "19:21"
+    },
+    "mem": {
+      "size": 3527741440,
+      "rss": 130633728,
+      "rss_p": 0.02,
+      "share": 0
+    },
+    "name": "Google Chrome H",
+    "pid": 1457,
+    "ppid": 1262,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.163482 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.163Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Sublime Text 2.app/Contents/MacOS/Sublime Text 2 -psn_0_958698",
+    "cpu": {
+      "user": 4633,
+      "user_p": 0,
+      "system": 609,
+      "total": 5242,
+      "start_time": "19:16"
+    },
+    "mem": {
+      "size": 2682052608,
+      "rss": 55009280,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "Sublime Text 2",
+    "pid": 1453,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.163565 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.163Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/ApplicationServices.framework/Frameworks/PrintCore.framework/Versions/A/printtool agent",
+    "cpu": {
+      "user": 9,
+      "user_p": 0,
+      "system": 9,
+      "total": 18,
+      "start_time": "19:03"
+    },
+    "mem": {
+      "size": 2555293696,
+      "rss": 3117056,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "printtool",
+    "pid": 1429,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.163678 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.163Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Google Chrome.app/Contents/Versions/49.0.2623.112/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --enable-features=AutomaticTabDiscarding\u003cAutomaticTabDiscarding,WebFontsIntervention\u003cWebFontsIntervention --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/*AutomaticTabDiscarding/Enabled_Once_10-gen2/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Enabled/*ExtensionActionRedesign/Enabled/*ExtensionDeveloperModeWarning/Default/*ExtensionInstallVerification/None/*GFE/Default/InstanceID/Enabled/IntelligentSessionRestore/Enabled2/*MacMemoryMechanism/Mach/MaterialDesignDownloads/Enabled/*OmniboxBundledExperimentV1/StableHQPFrequencyBugFix_PrePeriod_2/*PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Control50pct/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/*SafeBrowsingUpdateFrequency/Default/*UMA-Dynamic-Uniformity-Trial/Group6/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_01/*UMA-Uniformity-Trial-10-Percent/group_09/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_02/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/default/*UseDelayAgnosticAEC/DefaultEnabled/*WebFontsIntervention/Enabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --content-image-texture-target=3553,3553,3553,3553,3553,34037,3553,3553,3553,3553,34037,3553,34037,34037 --video-image-texture-target=34037 --channel=1262.49.176036465",
+    "cpu": {
+      "user": 39642,
+      "user_p": 0.0008,
+      "system": 4461,
+      "total": 44103,
+      "start_time": "18:42"
+    },
+    "mem": {
+      "size": 3859066880,
+      "rss": 478294016,
+      "rss_p": 0.06,
+      "share": 0
+    },
+    "name": "Google Chrome H",
+    "pid": 1391,
+    "ppid": 1262,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.163879 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.163Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Firefox.app/Contents/MacOS/firefox",
+    "cpu": {
+      "user": 28158,
+      "user_p": 0.0005,
+      "system": 3734,
+      "total": 31892,
+      "start_time": "18:42"
+    },
+    "mem": {
+      "size": 3469807616,
+      "rss": 504254464,
+      "rss_p": 0.06,
+      "share": 0
+    },
+    "name": "firefox",
+    "pid": 1387,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.164008 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.163Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/ScopedBookmarkAgent",
+    "cpu": {
+      "user": 17,
+      "user_p": 0,
+      "system": 7,
+      "total": 24,
+      "start_time": "18:35"
+    },
+    "mem": {
+      "size": 2553597952,
+      "rss": 3989504,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "ScopedBookmarkA",
+    "pid": 1369,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.164098 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.164Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Image Capture/Support/Image Capture Extension.app/Contents/MacOS/Image Capture Extension",
+    "cpu": {
+      "user": 114,
+      "user_p": 0,
+      "system": 38,
+      "total": 152,
+      "start_time": "18:35"
+    },
+    "mem": {
+      "size": 2616135680,
+      "rss": 14561280,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "Image Capture E",
+    "pid": 1366,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.164179 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.164Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/BookKit.framework/Versions/A/XPCServices/com.apple.BKAgentService.xpc/Contents/MacOS/com.apple.BKAgentService",
+    "cpu": {
+      "user": 11,
+      "user_p": 0,
+      "system": 9,
+      "total": 20,
+      "start_time": "18:35"
+    },
+    "mem": {
+      "size": 2554195968,
+      "rss": 8347648,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.BKAge",
+    "pid": 1365,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.164295 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.164Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Google Chrome.app/Contents/Versions/49.0.2623.112/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=renderer --enable-features=AutomaticTabDiscarding\u003cAutomaticTabDiscarding,WebFontsIntervention\u003cWebFontsIntervention --disable-databases --lang=en-US --force-fieldtrials=AppBannerTriggering/Aggressive/AutofillProfileOrderByFrecency/Enabled/*AutomaticTabDiscarding/Enabled_Once_10-gen2/CaptivePortalInterstitial/Enabled/*ChildAccountDetection/Disabled/*ClientSideDetectionModel/Model0/*CrossDevicePromo/1DaySingleProfile/*DataReductionProxyConfigService/Enabled/*ExtensionActionRedesign/Enabled/*ExtensionDeveloperModeWarning/Default/*ExtensionInstallVerification/None/*GFE/Default/InstanceID/Enabled/IntelligentSessionRestore/Enabled2/*MacMemoryMechanism/Mach/MaterialDesignDownloads/Enabled/*OmniboxBundledExperimentV1/StableHQPFrequencyBugFix_PrePeriod_2/*PasswordBranding/Disabled/*PasswordGeneration/Disabled/*QUIC/EnabledNoId/ReportCertificateErrors/ShowAndPossiblySend/*ResourcePriorities/Control50pct/SHA1IdentityUIWarning/Enabled/SHA1ToolbarUIJanuary2016/Warning/SHA1ToolbarUIJanuary2017/Error/SSLCommonNameMismatchHandling/Disabled/*SafeBrowsingIncidentReportingService/Default/SafeBrowsingUnverifiedDownloads/DisableByParameterMostSbTypes2/*SafeBrowsingUpdateFrequency/Default/*UMA-Dynamic-Uniformity-Trial/Group6/*UMA-Population-Restrict/normal/*UMA-Uniformity-Trial-1-Percent/group_01/*UMA-Uniformity-Trial-10-Percent/group_09/*UMA-Uniformity-Trial-100-Percent/group_01/*UMA-Uniformity-Trial-20-Percent/group_02/*UMA-Uniformity-Trial-5-Percent/group_02/*UMA-Uniformity-Trial-50-Percent/default/*UseDelayAgnosticAEC/DefaultEnabled/*WebFontsIntervention/Enabled/WebRTC-LocalIPPermissionCheck/Enabled/WebRTC-PeerConnectionDTLS1.2/Enabled/ --enable-offline-auto-reload --enable-offline-auto-reload-visible-only --num-raster-threads=2 --enable-zero-copy --enable-gpu-memory-buffer-compositor-resources --content-image-texture-target=3553,3553,3553,3553,3553,34037,3553,3553,3553,3553,34037,3553,34037,34037 --video-image-texture-target=34037 --channel=1262.35.620124372",
+    "cpu": {
+      "user": 17332,
+      "user_p": 0.0011,
+      "system": 2290,
+      "total": 19622,
+      "start_time": "18:34"
+    },
+    "mem": {
+      "size": 3800440832,
+      "rss": 289796096,
+      "rss_p": 0.03,
+      "share": 0
+    },
+    "name": "Google Chrome H",
+    "pid": 1356,
+    "ppid": 1262,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.164428 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.164Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Library/Application Support/Adobe/CS5ServiceManager/CS5ServiceManager.app/Contents/MacOS/CS5ServiceManager -launchedbycsxs",
+    "cpu": {
+      "user": 106,
+      "user_p": 0,
+      "system": 37,
+      "total": 143,
+      "start_time": "18:34"
+    },
+    "mem": {
+      "size": 717320192,
+      "rss": 9375744,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CS5ServiceManag",
+    "pid": 1353,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.164531 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.164Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Adobe Photoshop CS5/Adobe Photoshop CS5.app/Contents/Frameworks/AdobeCrashReporter.framework/Versions/A/Resources/AdobeCrashDaemon.app/Contents/MacOS/AdobeCrashDaemon 1345 Adobe Photoshop CS5 12.0x20100407.r.1103) (12.0 /Applications/Adobe Photoshop CS5/Adobe Photoshop CS5.app/Contents/Resources/PS_AppIcon.icns /Applications/Adobe Photoshop CS5/Adobe Photoshop CS5.app/Contents/Frameworks/AdobeCrashReporter.framework/Versions/A/Resources/Adobe Crash Reporter.app/Contents/MacOS/Adobe Crash Reporter 0 /Applications/Adobe Photoshop CS5/Adobe Photoshop CS5.app/Contents/Frameworks/AdobeCrashReporter.framework/Versions/A/Resources/AdobeCrashRealTimeNotification.app/Contents/MacOS/AdobeCrashRealTimeNotification     ",
+    "cpu": {
+      "user": 59,
+      "user_p": 0,
+      "system": 45,
+      "total": 104,
+      "start_time": "18:34"
+    },
+    "mem": {
+      "size": 2519674880,
+      "rss": 5332992,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "AdobeCrashDaemo",
+    "pid": 1347,
+    "ppid": 1345,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.164682 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.164Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Adobe Photoshop CS5/Adobe Photoshop CS5.app/Contents/MacOS/Adobe Photoshop CS5",
+    "cpu": {
+      "user": 711173,
+      "user_p": 0,
+      "system": 151156,
+      "total": 862329,
+      "start_time": "18:34"
+    },
+    "mem": {
+      "size": 3644530688,
+      "rss": 518713344,
+      "rss_p": 0.06,
+      "share": 0
+    },
+    "name": "Adobe Photoshop",
+    "pid": 1345,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.164779 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.164Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/WebKit.framework/Versions/A/XPCServices/com.apple.WebKit.WebContent.xpc/Contents/MacOS/com.apple.WebKit.WebContent",
+    "cpu": {
+      "user": 1816,
+      "user_p": 0,
+      "system": 435,
+      "total": 2251,
+      "start_time": "18:34"
+    },
+    "mem": {
+      "size": 3952926720,
+      "rss": 68775936,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "com.apple.WebKi",
+    "pid": 1344,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.164855 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.164Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/SafariServices.framework/Versions/A/XPCServices/com.apple.SafariServices.xpc/Contents/MacOS/com.apple.SafariServices",
+    "cpu": {
+      "user": 13,
+      "user_p": 0,
+      "system": 10,
+      "total": 23,
+      "start_time": "18:34"
+    },
+    "mem": {
+      "size": 2556461056,
+      "rss": 8626176,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.Safar",
+    "pid": 1343,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.164926 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.164Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/VideoToolbox.framework/Versions/A/XPCServices/VTDecoderXPCService.xpc/Contents/MacOS/VTDecoderXPCService",
+    "cpu": {
+      "user": 8,
+      "user_p": 0,
+      "system": 5,
+      "total": 13,
+      "start_time": "17:40"
+    },
+    "mem": {
+      "size": 2552590336,
+      "rss": 5959680,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "VTDecoderXPCSer",
+    "pid": 1270,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.165145 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.165Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Google Chrome.app/Contents/Versions/49.0.2623.112/Google Chrome Helper.app/Contents/MacOS/Google Chrome Helper --type=gpu-process --channel=1262.0.806446708 --supports-dual-gpus=false --gpu-driver-bug-workarounds=16,17,31,36,40,50,54,61,67,70 --gpu-vendor-id=0x8086 --gpu-device-id=0x0d22 --gpu-driver-vendor --gpu-driver-version",
+    "cpu": {
+      "user": 14065,
+      "user_p": 0,
+      "system": 10123,
+      "total": 24188,
+      "start_time": "17:40"
+    },
+    "mem": {
+      "size": 2872152064,
+      "rss": 51003392,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "Google Chrome H",
+    "pid": 1266,
+    "ppid": 1262,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.165296 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.165Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Google Chrome.app/Contents/Versions/49.0.2623.112/Google Chrome Framework.framework/Helpers/crashpad_handler --database=/Users/psg-skava/Library/Application Support/Google/Chrome/Crashpad --url=https://clients2.google.com/cr/report --annotation=plat=OS X --annotation=prod=Chrome_Mac --annotation=ver=49.0.2623.112 --handshake-fd=8",
+    "cpu": {
+      "user": 29,
+      "user_p": 0,
+      "system": 36,
+      "total": 65,
+      "start_time": "17:40"
+    },
+    "mem": {
+      "size": 2555543552,
+      "rss": 7286784,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "crashpad_handle",
+    "pid": 1265,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.165422 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.165Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+    "cpu": {
+      "user": 79263,
+      "user_p": 0.0004,
+      "system": 24787,
+      "total": 104050,
+      "start_time": "17:40"
+    },
+    "mem": {
+      "size": 3586580480,
+      "rss": 235753472,
+      "rss_p": 0.03,
+      "share": 0
+    },
+    "name": "Google Chrome",
+    "pid": 1262,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.165543 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.165Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreMediaIO.framework/Versions/A/XPCServices/com.apple.cmio.registerassistantservice.xpc/Contents/MacOS/com.apple.cmio.registerassistantservice",
+    "cpu": {
+      "user": 5,
+      "user_p": 0,
+      "system": 3,
+      "total": 8,
+      "start_time": "17:34"
+    },
+    "mem": {
+      "size": 2528137216,
+      "rss": 5312512,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.cmio.",
+    "pid": 1239,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.165658 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.165Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 664,
+      "user_p": 0,
+      "system": 143,
+      "total": 807,
+      "start_time": "17:28"
+    },
+    "mem": {
+      "size": 2571743232,
+      "rss": 20066304,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 1203,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.165895 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.165Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 536,
+      "user_p": 0,
+      "system": 120,
+      "total": 656,
+      "start_time": "17:28"
+    },
+    "mem": {
+      "size": 2547109888,
+      "rss": 20439040,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 1202,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.165987 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.165Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 615,
+      "user_p": 0,
+      "system": 130,
+      "total": 745,
+      "start_time": "17:28"
+    },
+    "mem": {
+      "size": 2546737152,
+      "rss": 19275776,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 1201,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166063 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/SystemAdministration.framework/XPCServices/writeconfig.xpc/Contents/MacOS/writeconfig",
+    "cpu": {
+      "user": 7,
+      "user_p": 0,
+      "system": 6,
+      "total": 13,
+      "start_time": "17:22"
+    },
+    "mem": {
+      "size": 2528894976,
+      "rss": 3383296,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "writeconfig",
+    "pid": 1175,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166135 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker -c MDSImporterWorker -m com.apple.mdworker.shared",
+    "cpu": {
+      "user": 886,
+      "user_p": 0,
+      "system": 177,
+      "total": 1063,
+      "start_time": "16:45"
+    },
+    "mem": {
+      "size": 2550673408,
+      "rss": 22970368,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 1134,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166207 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CloudServices.framework/Resources/EscrowSecurityAlert.app/Contents/MacOS/EscrowSecurityAlert",
+    "cpu": {
+      "user": 58,
+      "user_p": 0,
+      "system": 39,
+      "total": 97,
+      "start_time": "16:16"
+    },
+    "mem": {
+      "size": 2604843008,
+      "rss": 14725120,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "EscrowSecurityA",
+    "pid": 1083,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166275 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/AirPlayUIAgent.app/Contents/MacOS/AirPlayUIAgent --launchd",
+    "cpu": {
+      "user": 60,
+      "user_p": 0,
+      "system": 57,
+      "total": 117,
+      "start_time": "15:35"
+    },
+    "mem": {
+      "size": 2601955328,
+      "rss": 11771904,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "AirPlayUIAgent",
+    "pid": 965,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166344 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/wifid",
+    "cpu": {
+      "user": 20,
+      "user_p": 0,
+      "system": 224,
+      "total": 244,
+      "start_time": "15:35"
+    },
+    "mem": {
+      "size": 2529058816,
+      "rss": 3358720,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "wifid",
+    "pid": 963,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166412 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 42,
+      "user_p": 0,
+      "system": 21,
+      "total": 63,
+      "start_time": "15:27"
+    },
+    "mem": {
+      "size": 587186876416,
+      "rss": 12210176,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "topbeat",
+    "pid": 936,
+    "ppid": 935,
+    "state": "stopped",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166481 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "sudo ./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 6,
+      "user_p": 0,
+      "system": 6,
+      "total": 12,
+      "start_time": "15:26"
+    },
+    "mem": {
+      "size": 2528346112,
+      "rss": 3092480,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "sudo",
+    "pid": 935,
+    "ppid": 809,
+    "state": "stopped",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166556 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 118,
+      "user_p": 0,
+      "system": 72,
+      "total": 190,
+      "start_time": "14:03"
+    },
+    "mem": {
+      "size": 587187138560,
+      "rss": 12492800,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "topbeat",
+    "pid": 832,
+    "ppid": 831,
+    "state": "stopped",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166623 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "sudo ./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 3,
+      "user_p": 0,
+      "system": 3,
+      "total": 6,
+      "start_time": "14:03"
+    },
+    "mem": {
+      "size": 2511474688,
+      "rss": 2678784,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "sudo",
+    "pid": 831,
+    "ppid": 809,
+    "state": "stopped",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166719 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/bin/java -Xms256m -Xmx1g -Djava.awt.headless=true -XX:+UseParNewGC -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -XX:+HeapDumpOnOutOfMemoryError -XX:+DisableExplicitGC -Dfile.encoding=UTF-8 -Djna.nosys=true -Des.path.home=/Users/psg-skava/Downloads/Lokesh/elasticsearch-2.3.1 -cp /Users/psg-skava/Downloads/Lokesh/elasticsearch-2.3.1/lib/elasticsearch-2.3.1.jar:/Users/psg-skava/Downloads/Lokesh/elasticsearch-2.3.1/lib/* org.elasticsearch.bootstrap.Elasticsearch start",
+    "cpu": {
+      "user": 12846,
+      "user_p": 0,
+      "system": 2265,
+      "total": 15111,
+      "start_time": "14:03"
+    },
+    "mem": {
+      "size": 5226233856,
+      "rss": 297852928,
+      "rss_p": 0.03,
+      "share": 0
+    },
+    "name": "java",
+    "pid": 819,
+    "ppid": 813,
+    "state": "stopped",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166801 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "-bash",
+    "cpu": {
+      "user": 11,
+      "user_p": 0,
+      "system": 10,
+      "total": 21,
+      "start_time": "14:02"
+    },
+    "mem": {
+      "size": 2520084480,
+      "rss": 1392640,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "bash",
+    "pid": 813,
+    "ppid": 812,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166871 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "login -pf psg-skava",
+    "cpu": {
+      "user": 6,
+      "user_p": 0,
+      "system": 6,
+      "total": 12,
+      "start_time": "14:02"
+    },
+    "mem": {
+      "size": 2528227328,
+      "rss": 2985984,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "login",
+    "pid": 812,
+    "ppid": 802,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.166940 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "-bash",
+    "cpu": {
+      "user": 47,
+      "user_p": 0.0009,
+      "system": 52,
+      "total": 99,
+      "start_time": "14:02"
+    },
+    "mem": {
+      "size": 2520084480,
+      "rss": 1413120,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "bash",
+    "pid": 809,
+    "ppid": 808,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167006 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.166Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "login -pf psg-skava",
+    "cpu": {
+      "user": 6,
+      "user_p": 0,
+      "system": 6,
+      "total": 12,
+      "start_time": "14:02"
+    },
+    "mem": {
+      "size": 2528227328,
+      "rss": 2973696,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "login",
+    "pid": 808,
+    "ppid": 802,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167025 output.go:87: DBG  output worker: publish 50 events
+2016/04/21 14:52:22.167079 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Utilities/Terminal.app/Contents/MacOS/Terminal",
+    "cpu": {
+      "user": 46786,
+      "user_p": 0.0267,
+      "system": 5254,
+      "total": 52040,
+      "start_time": "14:02"
+    },
+    "mem": {
+      "size": 2828935168,
+      "rss": 74031104,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "Terminal",
+    "pid": 802,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167147 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/AudioToolbox.framework/XPCServices/com.apple.audio.SandboxHelper.xpc/Contents/MacOS/com.apple.audio.SandboxHelper",
+    "cpu": {
+      "user": 6,
+      "user_p": 0,
+      "system": 4,
+      "total": 10,
+      "start_time": "14:00"
+    },
+    "mem": {
+      "size": 2529259520,
+      "rss": 5459968,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.audio",
+    "pid": 780,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167218 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/ApplicationServices.framework/Frameworks/SpeechSynthesis.framework/Resources/com.apple.speech.speechsynthesisd",
+    "cpu": {
+      "user": 1383,
+      "user_p": 0,
+      "system": 411,
+      "total": 1794,
+      "start_time": "14:00"
+    },
+    "mem": {
+      "size": 2961530880,
+      "rss": 44863488,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "com.apple.speec",
+    "pid": 779,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167285 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/syspolicyd",
+    "cpu": {
+      "user": 34,
+      "user_p": 0,
+      "system": 10,
+      "total": 44,
+      "start_time": "13:47"
+    },
+    "mem": {
+      "size": 2529075200,
+      "rss": 4288512,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "syspolicyd",
+    "pid": 691,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167356 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/MPlayerX.app/Contents/MacOS/MPlayerX -psn_0_278596",
+    "cpu": {
+      "user": 10833,
+      "user_p": 0,
+      "system": 9458,
+      "total": 20291,
+      "start_time": "13:47"
+    },
+    "mem": {
+      "size": 2853527552,
+      "rss": 51785728,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "MPlayerX",
+    "pid": 689,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167428 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 1747,
+      "user_p": 0.0005,
+      "system": 1305,
+      "total": 3052,
+      "start_time": "13:44"
+    },
+    "mem": {
+      "size": 587187138560,
+      "rss": 14241792,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "topbeat",
+    "pid": 678,
+    "ppid": 677,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167491 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "sudo ./topbeat -e -c topbeat.yml -d publish",
+    "cpu": {
+      "user": 6,
+      "user_p": 0,
+      "system": 7,
+      "total": 13,
+      "start_time": "13:44"
+    },
+    "mem": {
+      "size": 2528346112,
+      "rss": 3055616,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "sudo",
+    "pid": 677,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167561 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/DataDetectorsCore.framework/Versions/A/XPCServices/DataDetectorsDynamicData.xpc/Contents/MacOS/DataDetectorsDynamicData",
+    "cpu": {
+      "user": 11,
+      "user_p": 0,
+      "system": 8,
+      "total": 19,
+      "start_time": "13:41"
+    },
+    "mem": {
+      "size": 2555006976,
+      "rss": 9273344,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "DataDetectorsDy",
+    "pid": 636,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167634 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/InputMethodKit.framework/Resources/imklaunchagent",
+    "cpu": {
+      "user": 12,
+      "user_p": 0,
+      "system": 8,
+      "total": 20,
+      "start_time": "13:31"
+    },
+    "mem": {
+      "size": 2556030976,
+      "rss": 4231168,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "imklaunchagent",
+    "pid": 609,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167704 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/PhotoLibraryPrivate.framework/Versions/A/Support/photolibraryd",
+    "cpu": {
+      "user": 20,
+      "user_p": 0,
+      "system": 25,
+      "total": 45,
+      "start_time": "13:06"
+    },
+    "mem": {
+      "size": 2557575168,
+      "rss": 7372800,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "photolibraryd",
+    "pid": 525,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167775 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CloudPhotoServices.framework/Versions/A/Frameworks/CloudPhotoServicesConfiguration.framework/Versions/A/XPCServices/com.apple.CloudPhotosConfiguration.xpc/Contents/MacOS/com.apple.CloudPhotosConfiguration",
+    "cpu": {
+      "user": 80,
+      "user_p": 0,
+      "system": 47,
+      "total": 127,
+      "start_time": "13:06"
+    },
+    "mem": {
+      "size": 2560950272,
+      "rss": 14290944,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.Cloud",
+    "pid": 523,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167845 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/cloudphotosd.app/Contents/MacOS/cloudphotosd",
+    "cpu": {
+      "user": 152,
+      "user_p": 0,
+      "system": 195,
+      "total": 347,
+      "start_time": "13:06"
+    },
+    "mem": {
+      "size": 2630959104,
+      "rss": 22425600,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "cloudphotosd",
+    "pid": 522,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167917 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/Dock.app/Contents/Resources/DashboardClient.app/Contents/MacOS/DashboardClient",
+    "cpu": {
+      "user": 3232,
+      "user_p": 0,
+      "system": 629,
+      "total": 3861,
+      "start_time": "13:05"
+    },
+    "mem": {
+      "size": 3694321664,
+      "rss": 34840576,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "DashboardClient",
+    "pid": 516,
+    "ppid": 377,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.167984 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.167Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/InputMethodKit.framework/Versions/A/XPCServices/com.apple.InputMethodKit.UserDictionary.xpc/Contents/MacOS/com.apple.InputMethodKit.UserDictionary",
+    "cpu": {
+      "user": 18,
+      "user_p": 0,
+      "system": 11,
+      "total": 29,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2552922112,
+      "rss": 7434240,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.Input",
+    "pid": 506,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168051 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Services/AppleSpell.service/Contents/MacOS/AppleSpell -psn_0_167977",
+    "cpu": {
+      "user": 269,
+      "user_p": 0,
+      "system": 124,
+      "total": 393,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2596208640,
+      "rss": 13434880,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "AppleSpell",
+    "pid": 503,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168116 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/SafariNotificationAgent",
+    "cpu": {
+      "user": 100,
+      "user_p": 0,
+      "system": 7,
+      "total": 107,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2532118528,
+      "rss": 9011200,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "SafariNotificat",
+    "pid": 502,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168187 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/GeoServices.framework/Versions/A/XPCServices/com.apple.geod.xpc/Contents/MacOS/com.apple.geod",
+    "cpu": {
+      "user": 142,
+      "user_p": 0,
+      "system": 30,
+      "total": 172,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2555334656,
+      "rss": 7933952,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.geod",
+    "pid": 501,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168257 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storedownloadd",
+    "cpu": {
+      "user": 19,
+      "user_p": 0,
+      "system": 20,
+      "total": 39,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2557386752,
+      "rss": 8425472,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "storedownloadd",
+    "pid": 493,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168343 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CommerceKit.framework/Resources/LaterAgent.app/Contents/MacOS/LaterAgent",
+    "cpu": {
+      "user": 65,
+      "user_p": 0,
+      "system": 43,
+      "total": 108,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2604855296,
+      "rss": 12517376,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "LaterAgent",
+    "pid": 492,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168413 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storeassetd",
+    "cpu": {
+      "user": 186,
+      "user_p": 0,
+      "system": 176,
+      "total": 362,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2559488000,
+      "rss": 10100736,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "storeassetd",
+    "pid": 488,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168488 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/Calendar.app/Contents/PlugIns/com.apple.iCal.CalendarNC.appex/Contents/MacOS/com.apple.iCal.CalendarNC",
+    "cpu": {
+      "user": 117,
+      "user_p": 0,
+      "system": 66,
+      "total": 183,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2603999232,
+      "rss": 18968576,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.iCal.",
+    "pid": 484,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168556 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdflagwriter",
+    "cpu": {
+      "user": 15,
+      "user_p": 0,
+      "system": 78,
+      "total": 93,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2528477184,
+      "rss": 892928,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdflagwriter",
+    "pid": 483,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168621 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storelegacy",
+    "cpu": {
+      "user": 11,
+      "user_p": 0,
+      "system": 7,
+      "total": 18,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2528174080,
+      "rss": 6500352,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "storelegacy",
+    "pid": 481,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168691 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/SubmitDiagInfo server-init",
+    "cpu": {
+      "user": 9,
+      "user_p": 0,
+      "system": 6,
+      "total": 15,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2528452608,
+      "rss": 5939200,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "SubmitDiagInfo",
+    "pid": 479,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168764 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/spindump",
+    "cpu": {
+      "user": 809,
+      "user_p": 0,
+      "system": 313,
+      "total": 1122,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2608357376,
+      "rss": 60694528,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "spindump",
+    "pid": 478,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168832 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/CoreServicesUIAgent.app/Contents/MacOS/CoreServicesUIAgent",
+    "cpu": {
+      "user": 136,
+      "user_p": 0,
+      "system": 76,
+      "total": 212,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2617208832,
+      "rss": 16007168,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CoreServicesUIA",
+    "pid": 475,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168901 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/CrashReporterSupportHelper server-init",
+    "cpu": {
+      "user": 4,
+      "user_p": 0,
+      "system": 2,
+      "total": 6,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2528141312,
+      "rss": 2707456,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CrashReporterSu",
+    "pid": 474,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.168968 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.168Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/Security.framework/Versions/A/Resources/CloudKeychainProxy.bundle/Contents/MacOS/CloudKeychainProxy",
+    "cpu": {
+      "user": 7,
+      "user_p": 0,
+      "system": 6,
+      "total": 13,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2528309248,
+      "rss": 2891776,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CloudKeychainPr",
+    "pid": 468,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169045 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CalendarAgent.framework/Versions/A/XPCServices/CalNCService.xpc/Contents/MacOS/CalNCService",
+    "cpu": {
+      "user": 124,
+      "user_p": 0,
+      "system": 24,
+      "total": 148,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2558984192,
+      "rss": 19935232,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CalNCService",
+    "pid": 467,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169115 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/pbs",
+    "cpu": {
+      "user": 56,
+      "user_p": 0,
+      "system": 25,
+      "total": 81,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2556608512,
+      "rss": 4730880,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "pbs",
+    "pid": 466,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169180 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CallHistory.framework/Support/CallHistoryPluginHelper",
+    "cpu": {
+      "user": 18,
+      "user_p": 0,
+      "system": 8,
+      "total": 26,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2561556480,
+      "rss": 11091968,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CallHistoryPlug",
+    "pid": 464,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169247 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/nsurlsessiond",
+    "cpu": {
+      "user": 12,
+      "user_p": 0,
+      "system": 9,
+      "total": 21,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2528595968,
+      "rss": 6238208,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "nsurlsessiond",
+    "pid": 460,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169317 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/TelephonyUtilities.framework/callservicesd",
+    "cpu": {
+      "user": 101,
+      "user_p": 0,
+      "system": 68,
+      "total": 169,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2569641984,
+      "rss": 18194432,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "callservicesd",
+    "pid": 459,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169412 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/NotificationCenter.app/Contents/XPCServices/com.apple.notificationcenterui.WeatherSummary.xpc/Contents/MacOS/com.apple.notificationcenterui.WeatherSummary",
+    "cpu": {
+      "user": 65,
+      "user_p": 0,
+      "system": 56,
+      "total": 121,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2528169984,
+      "rss": 9723904,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.notif",
+    "pid": 458,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169507 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Library/Application Support/Adobe/OOBE/PDApp/UWA/AAM Updates Notifier.app/Contents/MacOS/AAM Updates Notifier",
+    "cpu": {
+      "user": 42016,
+      "user_p": 0,
+      "system": 18737,
+      "total": 60753,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 739127296,
+      "rss": 13934592,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "AAM Updates Not",
+    "pid": 457,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169580 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CloudKitDaemon.framework/Support/cloudd",
+    "cpu": {
+      "user": 186,
+      "user_p": 0,
+      "system": 231,
+      "total": 417,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2562527232,
+      "rss": 15237120,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "cloudd",
+    "pid": 456,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169647 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/fmfd",
+    "cpu": {
+      "user": 43,
+      "user_p": 0,
+      "system": 20,
+      "total": 63,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2553057280,
+      "rss": 13471744,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "fmfd",
+    "pid": 454,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169721 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/mapspushd",
+    "cpu": {
+      "user": 174,
+      "user_p": 0,
+      "system": 36,
+      "total": 210,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2554032128,
+      "rss": 10338304,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mapspushd",
+    "pid": 453,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169786 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CallHistory.framework/Support/CallHistorySyncHelper",
+    "cpu": {
+      "user": 30,
+      "user_p": 0,
+      "system": 24,
+      "total": 54,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2561671168,
+      "rss": 12898304,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CallHistorySync",
+    "pid": 452,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169864 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesisServer.app/Contents/MacOS/SpeechSynthesisServer launchd",
+    "cpu": {
+      "user": 70,
+      "user_p": 0,
+      "system": 50,
+      "total": 120,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2595897344,
+      "rss": 12165120,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "SpeechSynthesis",
+    "pid": 449,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.169946 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/Accounts.framework/Versions/A/Support/accountsd",
+    "cpu": {
+      "user": 48,
+      "user_p": 0,
+      "system": 15,
+      "total": 63,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2556968960,
+      "rss": 6877184,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "accountsd",
+    "pid": 448,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.170014 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.169Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/IMDPersistence.framework/XPCServices/IMDPersistenceAgent.xpc/Contents/MacOS/IMDPersistenceAgent",
+    "cpu": {
+      "user": 21,
+      "user_p": 0,
+      "system": 12,
+      "total": 33,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2553446400,
+      "rss": 4464640,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "IMDPersistenceA",
+    "pid": 445,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.170085 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.170Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/secinitd",
+    "cpu": {
+      "user": 168,
+      "user_p": 0,
+      "system": 66,
+      "total": 234,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2553221120,
+      "rss": 8400896,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "secinitd",
+    "pid": 444,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.170153 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.170Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/nsurlstoraged",
+    "cpu": {
+      "user": 1983,
+      "user_p": 0,
+      "system": 1811,
+      "total": 3794,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2532843520,
+      "rss": 8966144,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "nsurlstoraged",
+    "pid": 442,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.170221 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.170Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/locationd",
+    "cpu": {
+      "user": 242,
+      "user_p": 0,
+      "system": 296,
+      "total": 538,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2562863104,
+      "rss": 7995392,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "locationd",
+    "pid": 441,
+    "ppid": 1,
+    "state": "running",
+    "username": "_locationd"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.170289 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.170Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/amfid",
+    "cpu": {
+      "user": 237,
+      "user_p": 0,
+      "system": 17,
+      "total": 254,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2555576320,
+      "rss": 6455296,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "amfid",
+    "pid": 440,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.170359 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.170Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Applications/iTunes.app/Contents/MacOS/iTunesHelper.app/Contents/MacOS/iTunesHelper",
+    "cpu": {
+      "user": 17,
+      "user_p": 0,
+      "system": 13,
+      "total": 30,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2558926848,
+      "rss": 6135808,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "iTunesHelper",
+    "pid": 439,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.170425 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.170Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Resources/storeaccountd",
+    "cpu": {
+      "user": 262,
+      "user_p": 0,
+      "system": 100,
+      "total": 362,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2557874176,
+      "rss": 16855040,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "storeaccountd",
+    "pid": 438,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.170496 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.170Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/Dock.app/Contents/XPCServices/com.apple.dock.extra.xpc/Contents/MacOS/com.apple.dock.extra",
+    "cpu": {
+      "user": 204,
+      "user_p": 0,
+      "system": 106,
+      "total": 310,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2615230464,
+      "rss": 23130112,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.dock.",
+    "pid": 437,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.170562 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.170Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/filecoordinationd",
+    "cpu": {
+      "user": 132,
+      "user_p": 0,
+      "system": 89,
+      "total": 221,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2533928960,
+      "rss": 3522560,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "filecoordinatio",
+    "pid": 434,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.170625 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.170Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/secd",
+    "cpu": {
+      "user": 16,
+      "user_p": 0,
+      "system": 14,
+      "total": 30,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2554257408,
+      "rss": 3784704,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "secd",
+    "pid": 433,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.170695 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.170Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/lsuseractivityd",
+    "cpu": {
+      "user": 676,
+      "user_p": 0,
+      "system": 480,
+      "total": 1156,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2555138048,
+      "rss": 4685824,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "lsuseractivityd",
+    "pid": 432,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.212032 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.170Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/MessagesKit.framework/Resources/soagent.app/Contents/MacOS/soagent",
+    "cpu": {
+      "user": 88,
+      "user_p": 0,
+      "system": 39,
+      "total": 127,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2589736960,
+      "rss": 19709952,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "soagent",
+    "pid": 429,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.212325 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.212Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/Library/PreferencePanes/ParagonNTFS.prefPane/Contents/Resources/fsnotifyagent.app/Contents/MacOS/fsnotifyagent",
+    "cpu": {
+      "user": 110,
+      "user_p": 0,
+      "system": 66,
+      "total": 176,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 716472320,
+      "rss": 8601600,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "fsnotifyagent",
+    "pid": 427,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.212443 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.212Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/diagnostics_agent",
+    "cpu": {
+      "user": 182,
+      "user_p": 0,
+      "system": 99,
+      "total": 281,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2553573376,
+      "rss": 8462336,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "diagnostics_age",
+    "pid": 424,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.212549 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.212Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/WiFiAgent.app/Contents/MacOS/WiFiAgent",
+    "cpu": {
+      "user": 68,
+      "user_p": 0,
+      "system": 46,
+      "total": 114,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2596200448,
+      "rss": 11722752,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "WiFiAgent",
+    "pid": 423,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.212792 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.212Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/cloudpaird",
+    "cpu": {
+      "user": 42,
+      "user_p": 0,
+      "system": 21,
+      "total": 63,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2552766464,
+      "rss": 4771840,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "cloudpaird",
+    "pid": 419,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.212884 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.212Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/IMCore.framework/imagent.app/Contents/MacOS/imagent",
+    "cpu": {
+      "user": 53,
+      "user_p": 0,
+      "system": 37,
+      "total": 90,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2554478592,
+      "rss": 12607488,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "imagent",
+    "pid": 418,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.212961 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.212Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/AskPermission.framework/Versions/A/Resources/askpermissiond",
+    "cpu": {
+      "user": 15,
+      "user_p": 0,
+      "system": 10,
+      "total": 25,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2552795136,
+      "rss": 12079104,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "askpermissiond",
+    "pid": 417,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.213031 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.213Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CalendarAgent.framework/Executables/CalendarAgent",
+    "cpu": {
+      "user": 407,
+      "user_p": 0,
+      "system": 145,
+      "total": 552,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2569551872,
+      "rss": 24571904,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CalendarAgent",
+    "pid": 415,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.213099 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.213Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/AppleIDAuthAgent",
+    "cpu": {
+      "user": 91,
+      "user_p": 0,
+      "system": 21,
+      "total": 112,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2556633088,
+      "rss": 14671872,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "AppleIDAuthAgen",
+    "pid": 412,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.213181 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.213Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/NotificationCenter.app/Contents/MacOS/NotificationCenter",
+    "cpu": {
+      "user": 424,
+      "user_p": 0,
+      "system": 136,
+      "total": 560,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2647236608,
+      "rss": 25874432,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "NotificationCen",
+    "pid": 410,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.213280 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.213Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/Keychain Circle Notification.app/Contents/MacOS/Keychain Circle Notification",
+    "cpu": {
+      "user": 69,
+      "user_p": 0,
+      "system": 40,
+      "total": 109,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2604834816,
+      "rss": 17387520,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "Keychain Circle",
+    "pid": 407,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.213379 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.213Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/SocialPushAgent.app/Contents/MacOS/SocialPushAgent",
+    "cpu": {
+      "user": 13,
+      "user_p": 0,
+      "system": 9,
+      "total": 22,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2552737792,
+      "rss": 6823936,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "SocialPushAgent",
+    "pid": 405,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.213440 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.213Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/spindump_agent",
+    "cpu": {
+      "user": 7,
+      "user_p": 0,
+      "system": 8,
+      "total": 15,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2532237312,
+      "rss": 3047424,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "spindump_agent",
+    "pid": 402,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.213599 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.213Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/ParsecUI.framework/Versions/A/Support/SpotlightNetHelper.app/Contents/MacOS/SpotlightNetHelper",
+    "cpu": {
+      "user": 164,
+      "user_p": 0,
+      "system": 93,
+      "total": 257,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2561802240,
+      "rss": 15425536,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "SpotlightNetHel",
+    "pid": 400,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.213701 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.213Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/IDS.framework/identityservicesd.app/Contents/MacOS/identityservicesd",
+    "cpu": {
+      "user": 314,
+      "user_p": 0,
+      "system": 244,
+      "total": 558,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2566131712,
+      "rss": 16744448,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "identityservice",
+    "pid": 399,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.213799 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.213Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/pkd",
+    "cpu": {
+      "user": 170,
+      "user_p": 0,
+      "system": 53,
+      "total": 223,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2558595072,
+      "rss": 9613312,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "pkd",
+    "pid": 398,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.213892 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.213Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/TCC.framework/Resources/tccd",
+    "cpu": {
+      "user": 397,
+      "user_p": 0,
+      "system": 68,
+      "total": 465,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2560356352,
+      "rss": 6852608,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "tccd",
+    "pid": 397,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.213977 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.213Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/sharingd",
+    "cpu": {
+      "user": 433,
+      "user_p": 0,
+      "system": 203,
+      "total": 636,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2568908800,
+      "rss": 19824640,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "sharingd",
+    "pid": 396,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.214084 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.214Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/Menu Extras/AirPort.menu/Contents/XPCServices/com.apple.wifi.proxy.xpc/Contents/MacOS/com.apple.wifi.proxy",
+    "cpu": {
+      "user": 22,
+      "user_p": 0,
+      "system": 21,
+      "total": 43,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2554777600,
+      "rss": 3760128,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.wifi.",
+    "pid": 395,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.214168 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.214Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CloudDocsDaemon.framework/Versions/A/Support/bird",
+    "cpu": {
+      "user": 35,
+      "user_p": 0,
+      "system": 28,
+      "total": 63,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2555748352,
+      "rss": 12902400,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "bird",
+    "pid": 394,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.214262 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.214Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/backupd.bundle/Contents/Resources/TMCacheDelete",
+    "cpu": {
+      "user": 178,
+      "user_p": 0,
+      "system": 124,
+      "total": 302,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2531647488,
+      "rss": 11603968,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "TMCacheDelete",
+    "pid": 393,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.214336 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.214Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/iconservicesagent",
+    "cpu": {
+      "user": 416,
+      "user_p": 0,
+      "system": 88,
+      "total": 504,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2578698240,
+      "rss": 22597632,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "iconservicesage",
+    "pid": 392,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.214410 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.214Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/usernoted",
+    "cpu": {
+      "user": 194,
+      "user_p": 0,
+      "system": 48,
+      "total": 242,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2553167872,
+      "rss": 5746688,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "usernoted",
+    "pid": 391,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.214504 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.214Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/Spotlight.app/Contents/MacOS/Spotlight",
+    "cpu": {
+      "user": 1290,
+      "user_p": 0,
+      "system": 463,
+      "total": 1753,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 3770843136,
+      "rss": 43798528,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "Spotlight",
+    "pid": 388,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.214566 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.214Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/ApplicationServices.framework/Frameworks/ATS.framework/Support/fontd",
+    "cpu": {
+      "user": 3734,
+      "user_p": 0,
+      "system": 3549,
+      "total": 7283,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2589212672,
+      "rss": 8929280,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "fontd",
+    "pid": 387,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.214754 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.214Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreAudio.framework/Versions/A/XPCServices/com.apple.audio.DriverHelper.xpc/Contents/MacOS/com.apple.audio.DriverHelper",
+    "cpu": {
+      "user": 21,
+      "user_p": 0,
+      "system": 7,
+      "total": 28,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2552987648,
+      "rss": 2252800,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.audio",
+    "pid": 386,
+    "ppid": 1,
+    "state": "running",
+    "username": "_coreaudiod"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.214856 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.214Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/pboard",
+    "cpu": {
+      "user": 2,
+      "user_p": 0,
+      "system": 4,
+      "total": 6,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2518413312,
+      "rss": 1085440,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "pboard",
+    "pid": 383,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.214965 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.214Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/coreaudiod",
+    "cpu": {
+      "user": 779,
+      "user_p": 0,
+      "system": 5641,
+      "total": 6420,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2561998848,
+      "rss": 11046912,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "coreaudiod",
+    "pid": 381,
+    "ppid": 1,
+    "state": "running",
+    "username": "_coreaudiod"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.215075 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.215Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/Finder.app/Contents/MacOS/Finder",
+    "cpu": {
+      "user": 16565,
+      "user_p": 0,
+      "system": 3710,
+      "total": 20275,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2874912768,
+      "rss": 122511360,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "Finder",
+    "pid": 380,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.215181 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.215Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/SystemUIServer.app/Contents/MacOS/SystemUIServer",
+    "cpu": {
+      "user": 1363,
+      "user_p": 0,
+      "system": 405,
+      "total": 1768,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2632245248,
+      "rss": 20025344,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "SystemUIServer",
+    "pid": 379,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.215287 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.215Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/Dock.app/Contents/MacOS/Dock",
+    "cpu": {
+      "user": 8039,
+      "user_p": 0,
+      "system": 3575,
+      "total": 11614,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2670252032,
+      "rss": 46772224,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "Dock",
+    "pid": 377,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.215394 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.215Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/UserEventAgent (Aqua)",
+    "cpu": {
+      "user": 320,
+      "user_p": 0,
+      "system": 256,
+      "total": 576,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2559016960,
+      "rss": 13791232,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "UserEventAgent",
+    "pid": 374,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.215507 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.215Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/securityd_service",
+    "cpu": {
+      "user": 10,
+      "user_p": 0,
+      "system": 51,
+      "total": 61,
+      "start_time": "13:03"
+    },
+    "mem": {
+      "size": 2553212928,
+      "rss": 2093056,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "securityd_servi",
+    "pid": 373,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.215605 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.215Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/Noticeboard.framework/Versions/A/Resources/nbstated",
+    "cpu": {
+      "user": 10,
+      "user_p": 0,
+      "system": 5,
+      "total": 15,
+      "start_time": "12:46"
+    },
+    "mem": {
+      "size": 2552832000,
+      "rss": 3592192,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "nbstated",
+    "pid": 272,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.215716 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.215Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mdworker -s mdworker-sizing -c MDSSizingWorker -m com.apple.mdworker.sizing",
+    "cpu": {
+      "user": 58,
+      "user_p": 0,
+      "system": 60,
+      "total": 118,
+      "start_time": "12:46"
+    },
+    "mem": {
+      "size": 2532106240,
+      "rss": 6737920,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mdworker",
+    "pid": 243,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.215793 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.215Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/SoftwareUpdate.framework/Resources/suhelperd",
+    "cpu": {
+      "user": 12,
+      "user_p": 0,
+      "system": 9,
+      "total": 21,
+      "start_time": "12:46"
+    },
+    "mem": {
+      "size": 2528927744,
+      "rss": 6483968,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "suhelperd",
+    "pid": 242,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.215880 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.215Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/Software Update.app/Contents/Resources/softwareupdated",
+    "cpu": {
+      "user": 735,
+      "user_p": 0,
+      "system": 56,
+      "total": 791,
+      "start_time": "12:46"
+    },
+    "mem": {
+      "size": 2585391104,
+      "rss": 52310016,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "softwareupdated",
+    "pid": 239,
+    "ppid": 1,
+    "state": "running",
+    "username": "_softwareupdate"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.215978 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.215Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/periodic-wrapper monthly",
+    "cpu": {
+      "user": 1,
+      "user_p": 0,
+      "system": 2,
+      "total": 3,
+      "start_time": "12:46"
+    },
+    "mem": {
+      "size": 2528477184,
+      "rss": 749568,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "periodic-wrappe",
+    "pid": 238,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216050 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/periodic-wrapper daily",
+    "cpu": {
+      "user": 1,
+      "user_p": 0,
+      "system": 2,
+      "total": 3,
+      "start_time": "12:46"
+    },
+    "mem": {
+      "size": 2519040000,
+      "rss": 724992,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "periodic-wrappe",
+    "pid": 237,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216116 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CacheDelete.framework/deleted",
+    "cpu": {
+      "user": 429,
+      "user_p": 0,
+      "system": 297,
+      "total": 726,
+      "start_time": "12:46"
+    },
+    "mem": {
+      "size": 2531209216,
+      "rss": 7106560,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "deleted",
+    "pid": 236,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216185 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/systemstatsd",
+    "cpu": {
+      "user": 184,
+      "user_p": 0,
+      "system": 247,
+      "total": 431,
+      "start_time": "12:44"
+    },
+    "mem": {
+      "size": 2530410496,
+      "rss": 3473408,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "systemstatsd",
+    "pid": 231,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216253 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/distnoted agent",
+    "cpu": {
+      "user": 6259,
+      "user_p": 0.0001,
+      "system": 1478,
+      "total": 7737,
+      "start_time": "12:42"
+    },
+    "mem": {
+      "size": 2536939520,
+      "rss": 11051008,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "distnoted",
+    "pid": 220,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216325 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/CoreSymbolication.framework/coresymbolicationd",
+    "cpu": {
+      "user": 21,
+      "user_p": 0,
+      "system": 27,
+      "total": 48,
+      "start_time": "12:42"
+    },
+    "mem": {
+      "size": 2529771520,
+      "rss": 6500352,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "coresymbolicati",
+    "pid": 219,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216393 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/sandboxd -n PluginProcess -n ",
+    "cpu": {
+      "user": 67,
+      "user_p": 0,
+      "system": 68,
+      "total": 135,
+      "start_time": "12:42"
+    },
+    "mem": {
+      "size": 2564505600,
+      "rss": 8151040,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "sandboxd",
+    "pid": 218,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216462 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/cfprefsd agent",
+    "cpu": {
+      "user": 891,
+      "user_p": 0,
+      "system": 838,
+      "total": 1729,
+      "start_time": "12:42"
+    },
+    "mem": {
+      "size": 2538430464,
+      "rss": 10145792,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "cfprefsd",
+    "pid": 216,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216535 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/ntpd -c /private/etc/ntp-restrict.conf -n -g -p /var/run/ntpd.pid -f /var/db/ntp.drift",
+    "cpu": {
+      "user": 11,
+      "user_p": 0,
+      "system": 39,
+      "total": 50,
+      "start_time": "12:41"
+    },
+    "mem": {
+      "size": 2528268288,
+      "rss": 581632,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "ntpd",
+    "pid": 209,
+    "ppid": 167,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216607 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/AccountPolicy.framework/XPCServices/com.apple.AccountPolicyHelper.xpc/Contents/MacOS/com.apple.AccountPolicyHelper",
+    "cpu": {
+      "user": 13,
+      "user_p": 0,
+      "system": 9,
+      "total": 22,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2530926592,
+      "rss": 6533120,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.Accou",
+    "pid": 205,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216675 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/TCC.framework/Resources/tccd system",
+    "cpu": {
+      "user": 21,
+      "user_p": 0,
+      "system": 13,
+      "total": 34,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2556375040,
+      "rss": 8155136,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "tccd",
+    "pid": 204,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216759 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/PerformanceAnalysis.framework/XPCServices/com.apple.PerformanceAnalysis.animationperfd.xpc/Contents/MacOS/com.apple.PerformanceAnalysis.animationperfd",
+    "cpu": {
+      "user": 26,
+      "user_p": 0,
+      "system": 46,
+      "total": 72,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528743424,
+      "rss": 6262784,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.Perfo",
+    "pid": 203,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216833 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/Security.framework/Versions/A/XPCServices/com.apple.CodeSigningHelper.xpc/Contents/MacOS/com.apple.CodeSigningHelper",
+    "cpu": {
+      "user": 79,
+      "user_p": 0,
+      "system": 77,
+      "total": 156,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528477184,
+      "rss": 1585152,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.CodeS",
+    "pid": 196,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216904 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/AmbientDisplay.framework/Versions/A/XPCServices/com.apple.AmbientDisplayAgent.xpc/Contents/MacOS/com.apple.AmbientDisplayAgent",
+    "cpu": {
+      "user": 25,
+      "user_p": 0,
+      "system": 20,
+      "total": 45,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528931840,
+      "rss": 5861376,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.Ambie",
+    "pid": 187,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.216975 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.216Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/CVMServer",
+    "cpu": {
+      "user": 65,
+      "user_p": 0,
+      "system": 138,
+      "total": 203,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2581409792,
+      "rss": 1499136,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "CVMServer",
+    "pid": 184,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217045 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Versions/A/Support/mds_stores",
+    "cpu": {
+      "user": 6215,
+      "user_p": 0.0001,
+      "system": 2697,
+      "total": 8912,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 3120340992,
+      "rss": 98324480,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "mds_stores",
+    "pid": 182,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217113 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/smd",
+    "cpu": {
+      "user": 5,
+      "user_p": 0,
+      "system": 3,
+      "total": 8,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528710656,
+      "rss": 6139904,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "smd",
+    "pid": 181,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217186 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/netbiosd",
+    "cpu": {
+      "user": 4508,
+      "user_p": 0.0001,
+      "system": 7650,
+      "total": 12158,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2530390016,
+      "rss": 8396800,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "netbiosd",
+    "pid": 178,
+    "ppid": 1,
+    "state": "running",
+    "username": "_netbios"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217251 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/InternetSharing",
+    "cpu": {
+      "user": 9,
+      "user_p": 0,
+      "system": 8,
+      "total": 17,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528964608,
+      "rss": 6586368,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "InternetSharing",
+    "pid": 176,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217318 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "sysmond",
+    "cpu": {
+      "user": 393,
+      "user_p": 0,
+      "system": 360,
+      "total": 753,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528600064,
+      "rss": 2633728,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "sysmond",
+    "pid": 174,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217389 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreMediaIO.framework/Resources/VDC.plugin/Contents/Resources/VDCAssistant",
+    "cpu": {
+      "user": 18,
+      "user_p": 0,
+      "system": 38,
+      "total": 56,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2560688128,
+      "rss": 8024064,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "VDCAssistant",
+    "pid": 171,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217459 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/dpd",
+    "cpu": {
+      "user": 4,
+      "user_p": 0,
+      "system": 4,
+      "total": 8,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2552635392,
+      "rss": 2785280,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "dpd",
+    "pid": 170,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217528 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CryptoTokenKit/com.apple.ifdreader.slotd/Contents/MacOS/com.apple.ifdreader",
+    "cpu": {
+      "user": 7,
+      "user_p": 0,
+      "system": 3,
+      "total": 10,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2502115328,
+      "rss": 2646016,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.ifdre",
+    "pid": 168,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217596 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/ntpd -c /private/etc/ntp-restrict.conf -n -g -p /var/run/ntpd.pid -f /var/db/ntp.drift",
+    "cpu": {
+      "user": 492,
+      "user_p": 0,
+      "system": 778,
+      "total": 1270,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2530459648,
+      "rss": 1236992,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "ntpd",
+    "pid": 167,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217663 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/nehelper",
+    "cpu": {
+      "user": 30,
+      "user_p": 0,
+      "system": 49,
+      "total": 79,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2556436480,
+      "rss": 4124672,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "nehelper",
+    "pid": 166,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217732 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/usbd",
+    "cpu": {
+      "user": 13,
+      "user_p": 0,
+      "system": 16,
+      "total": 29,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2552729600,
+      "rss": 6131712,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "usbd",
+    "pid": 165,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217805 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/nsurlsessiond --privileged",
+    "cpu": {
+      "user": 10,
+      "user_p": 0,
+      "system": 10,
+      "total": 20,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528567296,
+      "rss": 5877760,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "nsurlsessiond",
+    "pid": 164,
+    "ppid": 1,
+    "state": "running",
+    "username": "_nsurlsessiond"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217875 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/nsurlstoraged",
+    "cpu": {
+      "user": 34,
+      "user_p": 0.0001,
+      "system": 18,
+      "total": 52,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2529386496,
+      "rss": 6701056,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "nsurlstoraged",
+    "pid": 163,
+    "ppid": 1,
+    "state": "running",
+    "username": "_nsurlstoraged"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.217943 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/watchdogd",
+    "cpu": {
+      "user": 57,
+      "user_p": 0,
+      "system": 304,
+      "total": 361,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528681984,
+      "rss": 5201920,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "watchdogd",
+    "pid": 159,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.218013 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.217Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/networkd_privileged",
+    "cpu": {
+      "user": 6,
+      "user_p": 0,
+      "system": 11,
+      "total": 17,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528485376,
+      "rss": 1081344,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "networkd_privil",
+    "pid": 158,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.218084 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.218Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/networkd",
+    "cpu": {
+      "user": 1183,
+      "user_p": 0,
+      "system": 561,
+      "total": 1744,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2533871616,
+      "rss": 9502720,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "networkd",
+    "pid": 157,
+    "ppid": 1,
+    "state": "running",
+    "username": "_networkd"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.218156 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.218Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/ApplicationServices.framework/Frameworks/CoreGraphics.framework/Resources/WindowServer -daemon",
+    "cpu": {
+      "user": 290086,
+      "user_p": 0.0187,
+      "system": 159876,
+      "total": 449962,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 3667062784,
+      "rss": 107368448,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "WindowServer",
+    "pid": 132,
+    "ppid": 1,
+    "state": "running",
+    "username": "_windowserver"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.218223 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.218Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/secinitd",
+    "cpu": {
+      "user": 16,
+      "user_p": 0,
+      "system": 8,
+      "total": 24,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2553212928,
+      "rss": 7782400,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "secinitd",
+    "pid": 131,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.218295 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.218Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CryptoTokenKit.framework/ctkd -s",
+    "cpu": {
+      "user": 7,
+      "user_p": 0,
+      "system": 4,
+      "total": 11,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528874496,
+      "rss": 6406144,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "ctkd",
+    "pid": 130,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.218362 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.218Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/PCSC.framework/Versions/A/XPCServices/com.apple.ctkpcscd.xpc/Contents/MacOS/com.apple.ctkpcscd",
+    "cpu": {
+      "user": 7,
+      "user_p": 0,
+      "system": 5,
+      "total": 12,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2530979840,
+      "rss": 6426624,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "com.apple.ctkpc",
+    "pid": 129,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.218431 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.218Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/diagnosticd",
+    "cpu": {
+      "user": 3,
+      "user_p": 0,
+      "system": 7,
+      "total": 10,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2529587200,
+      "rss": 1105920,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "diagnosticd",
+    "pid": 124,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.218625 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.218Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/cfprefsd daemon",
+    "cpu": {
+      "user": 713,
+      "user_p": 0,
+      "system": 762,
+      "total": 1475,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2531782656,
+      "rss": 3026944,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "cfprefsd",
+    "pid": 123,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.218751 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.218Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/Security.framework/Versions/A/XPCServices/authd.xpc/Contents/MacOS/authd",
+    "cpu": {
+      "user": 150,
+      "user_p": 0,
+      "system": 37,
+      "total": 187,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2557267968,
+      "rss": 9961472,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "authd",
+    "pid": 122,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.218862 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.218Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/coreservicesd",
+    "cpu": {
+      "user": 866,
+      "user_p": 0,
+      "system": 487,
+      "total": 1353,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2578210816,
+      "rss": 22212608,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "coreservicesd",
+    "pid": 118,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.219190 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.218Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/distnoted daemon",
+    "cpu": {
+      "user": 377,
+      "user_p": 0,
+      "system": 155,
+      "total": 532,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2530086912,
+      "rss": 2265088,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "distnoted",
+    "pid": 97,
+    "ppid": 1,
+    "state": "running",
+    "username": "_distnote"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.219314 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.219Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/taskgated -s",
+    "cpu": {
+      "user": 815,
+      "user_p": 0,
+      "system": 196,
+      "total": 1011,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2553266176,
+      "rss": 5152768,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "taskgated",
+    "pid": 94,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.219393 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.219Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/notifyd",
+    "cpu": {
+      "user": 1321,
+      "user_p": 0.0015,
+      "system": 2361,
+      "total": 3682,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2531717120,
+      "rss": 1769472,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "notifyd",
+    "pid": 93,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.219478 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.219Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/hidd",
+    "cpu": {
+      "user": 23875,
+      "user_p": 0,
+      "system": 12838,
+      "total": 36713,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2529239040,
+      "rss": 7659520,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "hidd",
+    "pid": 92,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.219551 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.219Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/KernelEventAgent",
+    "cpu": {
+      "user": 2,
+      "user_p": 0,
+      "system": 2,
+      "total": 4,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2520113152,
+      "rss": 1048576,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "KernelEventAgen",
+    "pid": 90,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.219647 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.219Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/logind",
+    "cpu": {
+      "user": 8,
+      "user_p": 0,
+      "system": 8,
+      "total": 16,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528178176,
+      "rss": 2756608,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "logind",
+    "pid": 89,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.219737 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.219Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/loginwindow.app/Contents/MacOS/loginwindow console",
+    "cpu": {
+      "user": 887,
+      "user_p": 0,
+      "system": 1549,
+      "total": 2436,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2586685440,
+      "rss": 17956864,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "loginwindow",
+    "pid": 88,
+    "ppid": 1,
+    "state": "running",
+    "username": "psg-skava"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.219834 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.219Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A/Support/revisiond",
+    "cpu": {
+      "user": 17,
+      "user_p": 0,
+      "system": 21,
+      "total": 38,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2556182528,
+      "rss": 4120576,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "revisiond",
+    "pid": 87,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.219908 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.219Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/stackshot -t -O",
+    "cpu": {
+      "user": 2,
+      "user_p": 0,
+      "system": 3,
+      "total": 5,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528522240,
+      "rss": 1310720,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "stackshot",
+    "pid": 86,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220006 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.219Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/mDNSResponder",
+    "cpu": {
+      "user": 697,
+      "user_p": 0,
+      "system": 1425,
+      "total": 2122,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2554331136,
+      "rss": 4763648,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "mDNSResponder",
+    "pid": 84,
+    "ppid": 1,
+    "state": "running",
+    "username": "_mdnsresponder"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220085 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/Software Update.app/Contents/Resources/softwareupdate_firstrun_tasks -BuildTagCache YES",
+    "cpu": {
+      "user": 9,
+      "user_p": 0,
+      "system": 11,
+      "total": 20,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528145408,
+      "rss": 6172672,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "softwareupdate_",
+    "pid": 83,
+    "ppid": 1,
+    "state": "running",
+    "username": "_softwareupdate"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220189 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "autofsd",
+    "cpu": {
+      "user": 6,
+      "user_p": 0,
+      "system": 4,
+      "total": 10,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528792576,
+      "rss": 6283264,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "autofsd",
+    "pid": 81,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220282 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/blued",
+    "cpu": {
+      "user": 545,
+      "user_p": 0,
+      "system": 618,
+      "total": 1163,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2553995264,
+      "rss": 10428416,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "blued",
+    "pid": 80,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220347 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/securityd -i",
+    "cpu": {
+      "user": 370,
+      "user_p": 0,
+      "system": 280,
+      "total": 650,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2555928576,
+      "rss": 4538368,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "securityd",
+    "pid": 75,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220422 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/MobileDevice.framework/Versions/A/Resources/usbmuxd -launchd",
+    "cpu": {
+      "user": 10,
+      "user_p": 0,
+      "system": 22,
+      "total": 32,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2530787328,
+      "rss": 3379200,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "usbmuxd",
+    "pid": 74,
+    "ppid": 1,
+    "state": "running",
+    "username": "_usbmuxd"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220489 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/launchservicesd",
+    "cpu": {
+      "user": 3025,
+      "user_p": 0,
+      "system": 1219,
+      "total": 4244,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2556870656,
+      "rss": 12926976,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "launchservicesd",
+    "pid": 73,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220555 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/ApplePushService.framework/apsd",
+    "cpu": {
+      "user": 696,
+      "user_p": 0,
+      "system": 431,
+      "total": 1127,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2556182528,
+      "rss": 11554816,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "apsd",
+    "pid": 72,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220622 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/wirelessproxd",
+    "cpu": {
+      "user": 20,
+      "user_p": 0,
+      "system": 26,
+      "total": 46,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2532417536,
+      "rss": 8032256,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "wirelessproxd",
+    "pid": 70,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220698 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/opendirectoryd",
+    "cpu": {
+      "user": 2245,
+      "user_p": 0.0007,
+      "system": 1125,
+      "total": 3370,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2571116544,
+      "rss": 13365248,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "opendirectoryd",
+    "pid": 69,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220765 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/PrivateFrameworks/WirelessDiagnostics.framework/Support/awdd",
+    "cpu": {
+      "user": 27,
+      "user_p": 0,
+      "system": 43,
+      "total": 70,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2555899904,
+      "rss": 5689344,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "awdd",
+    "pid": 67,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220830 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/wdhelper",
+    "cpu": {
+      "user": 6,
+      "user_p": 0,
+      "system": 6,
+      "total": 12,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528796672,
+      "rss": 5672960,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "wdhelper",
+    "pid": 65,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220894 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/coreduetd",
+    "cpu": {
+      "user": 1356,
+      "user_p": 0,
+      "system": 568,
+      "total": 1924,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2563317760,
+      "rss": 14946304,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "coreduetd",
+    "pid": 64,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.220965 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.220Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/diskarbitrationd",
+    "cpu": {
+      "user": 45,
+      "user_p": 0,
+      "system": 40,
+      "total": 85,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2555146240,
+      "rss": 2056192,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "diskarbitration",
+    "pid": 61,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221032 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/iconservicesagent",
+    "cpu": {
+      "user": 7,
+      "user_p": 0,
+      "system": 9,
+      "total": 16,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528669696,
+      "rss": 6385664,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "iconservicesage",
+    "pid": 60,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221101 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/iconservicesd",
+    "cpu": {
+      "user": 42,
+      "user_p": 0,
+      "system": 37,
+      "total": 79,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2558361600,
+      "rss": 8966144,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "iconservicesd",
+    "pid": 59,
+    "ppid": 1,
+    "state": "running",
+    "username": "_iconservices"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221170 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Support/mds",
+    "cpu": {
+      "user": 5926,
+      "user_p": 0,
+      "system": 4053,
+      "total": 9979,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2642743296,
+      "rss": 60559360,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "mds",
+    "pid": 55,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221246 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/warmd",
+    "cpu": {
+      "user": 92,
+      "user_p": 0,
+      "system": 71,
+      "total": 163,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2531844096,
+      "rss": 8101888,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "warmd",
+    "pid": 53,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221311 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/airportd",
+    "cpu": {
+      "user": 233,
+      "user_p": 0,
+      "system": 316,
+      "total": 549,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2563649536,
+      "rss": 11042816,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "airportd",
+    "pid": 52,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221376 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/powerd.bundle/powerd",
+    "cpu": {
+      "user": 193,
+      "user_p": 0,
+      "system": 174,
+      "total": 367,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2554716160,
+      "rss": 2170880,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "powerd",
+    "pid": 49,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221444 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/configd",
+    "cpu": {
+      "user": 701,
+      "user_p": 0.0001,
+      "system": 829,
+      "total": 1530,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2560622592,
+      "rss": 9863168,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "configd",
+    "pid": 48,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221518 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/appleeventsd --server",
+    "cpu": {
+      "user": 82,
+      "user_p": 0,
+      "system": 70,
+      "total": 152,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2555285504,
+      "rss": 7819264,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "appleeventsd",
+    "pid": 47,
+    "ppid": 1,
+    "state": "running",
+    "username": "_appleevents"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221586 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/thermald",
+    "cpu": {
+      "user": 11,
+      "user_p": 0,
+      "system": 9,
+      "total": 20,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528272384,
+      "rss": 5558272,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "thermald",
+    "pid": 45,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221664 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/Support/fseventsd",
+    "cpu": {
+      "user": 1038,
+      "user_p": 0,
+      "system": 1306,
+      "total": 2344,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2534645760,
+      "rss": 4100096,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "fseventsd",
+    "pid": 43,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221729 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/kextd",
+    "cpu": {
+      "user": 1245,
+      "user_p": 0,
+      "system": 780,
+      "total": 2025,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2562412544,
+      "rss": 16478208,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "kextd",
+    "pid": 42,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221799 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/UserEventAgent (System)",
+
+      "share": 0
+    },
+    "name": "iconservicesage",
+    "pid": 60,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221101 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/iconservicesd",
+    "cpu": {
+      "user": 42,
+      "user_p": 0,
+      "system": 37,
+      "total": 79,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2558361600,
+      "rss": 8966144,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "iconservicesd",
+    "pid": 59,
+    "ppid": 1,
+    "state": "running",
+    "username": "_iconservices"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221170 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Frameworks/Metadata.framework/Support/mds",
+    "cpu": {
+      "user": 5926,
+      "user_p": 0,
+      "system": 4053,
+      "total": 9979,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2642743296,
+      "rss": 60559360,
+      "rss_p": 0.01,
+      "share": 0
+    },
+    "name": "mds",
+    "pid": 55,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221246 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/warmd",
+    "cpu": {
+      "user": 92,
+      "user_p": 0,
+      "system": 71,
+      "total": 163,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2531844096,
+      "rss": 8101888,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "warmd",
+    "pid": 53,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221311 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/airportd",
+    "cpu": {
+      "user": 233,
+      "user_p": 0,
+      "system": 316,
+      "total": 549,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2563649536,
+      "rss": 11042816,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "airportd",
+    "pid": 52,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221376 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/powerd.bundle/powerd",
+    "cpu": {
+      "user": 193,
+      "user_p": 0,
+      "system": 174,
+      "total": 367,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2554716160,
+      "rss": 2170880,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "powerd",
+    "pid": 49,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221444 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/configd",
+    "cpu": {
+      "user": 701,
+      "user_p": 0.0001,
+      "system": 829,
+      "total": 1530,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2560622592,
+      "rss": 9863168,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "configd",
+    "pid": 48,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221518 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/CoreServices/appleeventsd --server",
+    "cpu": {
+      "user": 82,
+      "user_p": 0,
+      "system": 70,
+      "total": 152,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2555285504,
+      "rss": 7819264,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "appleeventsd",
+    "pid": 47,
+    "ppid": 1,
+    "state": "running",
+    "username": "_appleevents"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221586 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/thermald",
+    "cpu": {
+      "user": 11,
+      "user_p": 0,
+      "system": 9,
+      "total": 20,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2528272384,
+      "rss": 5558272,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "thermald",
+    "pid": 45,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221664 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/Support/fseventsd",
+    "cpu": {
+      "user": 1038,
+      "user_p": 0,
+      "system": 1306,
+      "total": 2344,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2534645760,
+      "rss": 4100096,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "fseventsd",
+    "pid": 43,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221729 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/kextd",
+    "cpu": {
+      "user": 1245,
+      "user_p": 0,
+      "system": 780,
+      "total": 2025,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2562412544,
+      "rss": 16478208,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "kextd",
+    "pid": 42,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221799 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/libexec/UserEventAgent (System)",
+    "cpu": {
+      "user": 979,
+      "user_p": 0,
+      "system": 2986,
+      "total": 3965,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2558230528,
+      "rss": 19668992,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "UserEventAgent",
+    "pid": 40,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221865 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/usr/sbin/syslogd",
+    "cpu": {
+      "user": 423,
+      "user_p": 0.0002,
+      "system": 885,
+      "total": 1308,
+      "start_time": "12:40"
+    },
+    "mem": {
+      "size": 2533380096,
+      "rss": 1622016,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "syslogd",
+    "pid": 39,
+    "ppid": 1,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.221936 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "proc": {
+    "cmdline": "/sbin/launchd",
+    "cpu": {
+      "user": 2970,
+      "user_p": 0.0006,
+      "system": 8433,
+      "total": 11403,
+      "start_time": "12:39"
+    },
+    "mem": {
+      "size": 2555064320,
+      "rss": 15380480,
+      "rss_p": 0,
+      "share": 0
+    },
+    "name": "launchd",
+    "pid": 1,
+    "ppid": 0,
+    "state": "running",
+    "username": "root"
+  },
+  "type": "process"
+}
+2016/04/21 14:52:22.222040 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "fs": {
+    "device_name": "/dev/disk0s2",
+    "total": 999345127424,
+    "used": 100140830720,
+    "used_p": 0.1,
+    "free": 899204296704,
+    "avail": 898942152704,
+    "files": 243980742,
+    "free_files": 219468299,
+    "mount_point": "/"
+  },
+  "type": "filesystem"
+}
+2016/04/21 14:52:22.222066 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "fs": {
+    "device_name": "devfs",
+    "total": 190976,
+    "used": 190976,
+    "used_p": 1,
+    "free": 0,
+    "avail": 0,
+    "files": 647,
+    "free_files": 0,
+    "mount_point": "/dev"
+  },
+  "type": "filesystem"
+}
+2016/04/21 14:52:22.222088 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "fs": {
+    "device_name": "map -hosts",
+    "total": 0,
+    "used": 0,
+    "used_p": 0,
+    "free": 0,
+    "avail": 0,
+    "files": 0,
+    "free_files": 0,
+    "mount_point": "/net"
+  },
+  "type": "filesystem"
+}
+2016/04/21 14:52:22.222109 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "fs": {
+    "device_name": "map auto_home",
+    "total": 0,
+    "used": 0,
+    "used_p": 0,
+    "free": 0,
+    "avail": 0,
+    "files": 0,
+    "free_files": 0,
+    "mount_point": "/home"
+  },
+  "type": "filesystem"
+}
+2016/04/21 14:52:22.222131 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "fs": {
+    "device_name": "/dev/disk1s1",
+    "total": 8004284416,
+    "used": 1570492416,
+    "used_p": 0.2,
+    "free": 6433792000,
+    "avail": 6433792000,
+    "files": 0,
+    "free_files": 6284711,
+    "mount_point": "/Volumes/POORNIMA"
+  },
+  "type": "filesystem"
+}
+2016/04/21 14:52:22.222222 publish.go:109: DBG  Publish: {
+  "@timestamp": "2016-04-21T14:52:22.221Z",
+  "beat": {
+    "hostname": "PSG-SKAVAs-iMac.local",
+    "name": "PSG-SKAVAs-iMac.local"
+  },
+  "count": 1,
+  "fs": {
+    "device_name": "/dev/disk2s0",
+    "total": 54286336,
+    "used": 54286336,
+    "used_p": 1,
+    "free": 0,
+    "avail": 0,
+    "files": 0,
+    "free_files": 0,
+    "mount_point": "/Volumes/Mblaze_Home"
+  },
+  "type": "filesystem"
+}
+^Z
+[2]+  Stopped                 sudo ./topbeat -e -c topbeat.yml -d "publish"
