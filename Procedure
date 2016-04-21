@@ -13,3 +13,6 @@
      (Kibana is an open source data visualization plugin for Elasticsearch. It provides visualization based on the
      content given by Elasticsearch. Users can create bar, line and scatter plots, or pie charts and maps on top of
      large volumes of data.)
+11. Write your user defined code to filter the data given by the topbeat with the help of topbeat.template.json and
+    and any language which supports parsing of data from .json files.
+12. That's it! You're done! :D
