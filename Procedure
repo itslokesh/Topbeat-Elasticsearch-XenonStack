@@ -1,0 +1,15 @@
+1. Download Topbeat from https://www.elastic.co/downloads/beats/topbeat
+2. Get the installation details from https://www.elastic.co/guide/en/beats/topbeat/.../topbeat-installation.html
+3. Get the configuration details from https://www.elastic.co/guide/en/beats/topbeat/.../topbeat-configuration.ht...
+4. Download Elasticsearch from https://www.elastic.co/downloads
+5. Get the installation details from https://www.elastic.co/guide/en/elasticsearch/reference/.../_installation.ht...
+6 and 7 are optional
+6. Download kibana from https://www.elastic.co/downloads/kibana
+7. Get the configuration details from https://www.elastic.co/guide/en/kibana/current/setup.html 
+8. Start the elasticsearch (ref: https://www.elastic.co/guide/en/elasticsearch/.../running-elasticsearch.htm...)
+9. Start the topbeat (ref: https://www.elastic.co/guide/en/.../topbeat/.../topbeat-getting-started.html)
+10 is optional
+10. Start the kibana (ref:https://www.elastic.co/guide/en/kibana/current/setup.html)
+     (Kibana is an open source data visualization plugin for Elasticsearch. It provides visualization based on the
+     content given by Elasticsearch. Users can create bar, line and scatter plots, or pie charts and maps on top of
+     large volumes of data.)
